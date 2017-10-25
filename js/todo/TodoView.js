@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import TodoList from './components/TodoList';
-import {
-  Button,
-  Text,
-  TextInput,
-  View
-} from 'react-native';
-
+import { Button, Text, TextInput, View } from 'react-native';
+ 
 
 class TodoView extends Component {
   constructor() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ListView, Text } from 'react-native';
-import './styles.scss'
+import styles from './styles.scss';
 
 
 class TodoList extends Component {
@@ -20,4 +20,4 @@ class TodoList extends Component {
     )
   }
 }
-export default TodoList;
+export default TodoList; 

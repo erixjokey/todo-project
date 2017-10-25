@@ -9,7 +9,6 @@ class TodoApp extends Component {
       <TodoView />
     )
   }
-
-}
+} 
 
 export default TodoApp;
