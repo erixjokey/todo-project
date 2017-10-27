@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { ListView, Text } from 'react-native';
-import styles from './styles.scss';
+import { ListView, Text, StyleSheet } from 'react-native';
 
 
 class TodoList extends Component {
@@ -13,11 +12,21 @@ class TodoList extends Component {
     const dataSource = ds.cloneWithRows(this.props.items.map(({text}) => text))
 
     return (
-      <ListView
-        dataSource={dataSource}
-        renderRow={(rowData) => <Text>{rowData}</Text>}
-      />
+        <ListView
+          style={styles.todoListForm}
+          dataSource={dataSource}
+          renderRow={(rowData) => <Text>{rowData}</Text>}
+        />
     )
   }
+
 }
+var styles = StyleSheet.create({
+
+  todoListForm: {
+    borderWidth: 2
+  }
+  
+});
+
 export default TodoList; 
